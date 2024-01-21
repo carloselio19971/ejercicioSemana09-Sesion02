@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#proto">Prototipos</a>
+                </li>
+                <li>
+                    <a href="#array">Arrays</a>
+                </li>
+                <li>
+                    <a href="#objeto">Objetos</a>
+                </li>
+                <li>
+                    <a href="#funciones">Funciones</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Conceptos Fundamentos CSS</h1>
+        <div class="prototype ancho" id="#proto">
+            <h2>¿Que son los Prototype?</h2>
+            <br>
+            <p>En javascript cada varaible de tipo de datos tiene un padre el cual contiene metodos:</p>
+            <br>
+            <nav>
+                <ul>
+                    <li><a>String</a></li>
+                    <li><a>Number</a></li>
+                    <li><a>Boolean</a></li>
+                </ul>
+            </nav>
+            <br>
+            <h3>String</h3>
+            <p>El propotipo de tipo String tiene las siguiente propiedades</p>
+            <br>
+            <nav>
+                <ul>
+                    <li>
+                        <a>.lenght (calcular el tamañao de una cadena)</a>
+                    </li>
+                    <li>
+                        <a>new String(para crear un nuevo objeto tipo cadena)</a>
+                    </li>
+                    <li>
+                        <a>ToLowerCase Transforma un cadena a minusucla</a>
+                    </li>
+                    <li>
+                        <a>ToUpperCase Transforma una cadena a mayuscula</a>
+                    </li>
+                    <li>
+                        <a>.trim Borra los espacio en blanco</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <h3>Number</h3>
+            <p>El protipo number tiene las siguientes propiedades</p>
+            <br>
+            <nav>
+                <ul>
+                    <li>
+                        <a>toFixed() (formatea decimales )</a>
+                    </li>
+                    <li>
+                        <a>Math.round (redondea un numero)</a>
+                    </li>
+                    <li>
+                        <a>Number.parseInt (transforma una cadena a número)</a>
+                    </li>
+                    <li>
+                        <a>isInteger valida (valida si el tipo de dato es numero)</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <h3>Arrays</h3>
+            <p>El protipo Array  tiene las siguientes propiedades</p>
+            <br>
+            <nav>
+                <ul>
+                    <li>
+                        <a>.lenght (me muestra el tamañao del arreglo)</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <h3>Otros</h3>
+            <nav>
+                <ul>
+                    <li>Typof me indica el tipo de datos</li>
+                </ul>
+            </nav>
+
+            <p style="color:green; margin-top: 5px;" >Los ejemplo se encuentra dentro del archivo app.js</p>
+        </div>
+        
+        <div class="arreglo ancho" id="array">
+            <h2>Arreglos</h2>
+            <br>
+            <p>Son un tipo de datos que nos permite almacenar multiples valores en una sola variable, se recomienda que los arreglo sean del mismo tipo de dato, pero tambien existen arreglos mixtos</p>
+            <h3>Indices</h3>
+            <p>Cada arreglo con tiene elementos y cada elemento tiene un indice que empieza desde 0</p>
+            <h3>Push</h3>
+            <p>Nos permite agregar un elemento al final de nuestro arreglo</p>
+            <h3>Pop</h3>
+            <p>Nos permite eliminar el ultimo elemento de nuestro arreglo</p>
+        </div>
+
+        <div class="objetos ancho" id="objeto">
+            <h2>Objetos Literal</h2>
+            <p>Los objetos son estructuras de datos nos permiten agregar datos y guardarlos en una sola variable</p>
+            <p>Los objetos tiene una declaracion y tiene una estructura llave valor similar en css</p>
+            <p>En el archivo js se pone un ejemplo de un objetos de cursos</p>
+            <h3>Mostrar Info</h3>
+            <p>Para mostra la informacion un objeto solo tiene que llama a la variable y colocar un punto(.) y acceder a su propiedad</p>
+            <h3>Agregar</h3>
+            <p>Para agregar un propiedad se debe colocar en nombre del objeto seguido un . y la nueva propiedad con su valor</p>
+            <h3>Quitar</h3>
+            <p>Para quita un propiedad se usa la palabra reservada <stong>delete</stong></p>
+            <h3>Destrucutring</h3>
+            <p>Nos permite separar en variables un objeto se usa { }</p>
+            <h3>This</h3>
+            <p>La palabra reservada this nos permite acceder a la variables que encuentra en el mismo objeto</p>
+            <h3>Unir Objetos</h3>
+            <p>Para unir objetos se el prototipe Object.assign y se le pasa los objetos a unir</p>
+        </div>
+        <div class="funciones ancho" id="funciones">
+            <h2>Funciones</h2>
+            <p>Son bloques de codigo que se puede encapsular y poder se reutilizado en nuestros programas (reutitilizables)</p>
+            <h3>Funciones Declarativas</h3>
+            <p>Se crean usan la palabra reservad function ejemplo function sumarnumeros(a,b) , el principal problema de este tipo es funciones es que pueden ser llamadas antes de ser creadas por el concepto de hoisting en javascript</p>
+            <h3>Funciones de Expresion</h3>
+            <p>Esta funciones son asignadas a una variable y a diferencia de las declarativas , no pueden ser llamadas antes de ser creadas por lo es recomendable utilizarlas que asi evitamos caer errores </p>
+            <h3>Invocacion</h3>
+            <p>Para llamar a la funciones solo se necesita escribir el nombre de la variable y si esta dentro de un objeto ingresar al objeto y colocar la el punto .</p>
+            <h3>Comunicacion Entre Funciones</h3>
+            <p>Las funciones pueden comunicarse entre si, se puede colocar funciones dentro de las  funcions y poder llamarse y utlizarse</p>
+            <h3>Arrow Function</h3>
+            <p>Es una forma mas concisa y breve de escribir funciones se utiliza => asi evitamos colocar function y podemos colocar =></p>
+        </div>
+    </main>
+
+
+    <script src="js/app.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+
+    *,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+    font-size: 25px;
+}
+
+
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.menu ul li a {
+    color:white;
+    font-size: 25px;
+ 
+
+}
+
+nav ul li a {
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu ul {
+
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+main h1{
+    text-align: center;
+    margin-top: 30px;
+margin-bottom: 30px;   
+}
+
+nav ul li{
+    list-style: none;
+}
+
+
+.ancho{
+    margin: 0 auto;
+    padding-left: 20px;
+    background-color: antiquewhite;
+    width: 1300px;
+
+}
+
+.arreglo , .funciones{
+    margin-top: 40px;
+}
+
+.objetos{
+    margin-top: 20px;
+}
